@@ -31,24 +31,22 @@ The Intelligent Movie Recommendation Assistant is a chatbot designed to provide 
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-
 3. **Install Dependencies:**
    ```bash
-  pip install -r requirements.txt
+   pip install -r requirements.txt
   
-   
 4. **Setup Secrets:**
    Create a file .streamlit/secrets.toml and add your OpenAI and Neo4j credentials:
    ```bash
-  OPENAI_API_KEY = "your-openai-api-key"
-  OPENAI_MODEL = "gpt-4"
-  NEO4J_URI = "your-neo4j-uri"
-  NEO4J_USERNAME = "your-neo4j-username"
-  NEO4J_PASSWORD = "your-neo4j-password"
+   OPENAI_API_KEY = "your-openai-api-key"
+   OPENAI_MODEL = "gpt-4"
+   NEO4J_URI = "your-neo4j-uri"
+   NEO4J_USERNAME = "your-neo4j-username"
+   NEO4J_PASSWORD = "your-neo4j-password"
    
 5. **Run the application:**
    ```bash
-streamlit run bot.py
+   streamlit run bot.py
 
 ## Project Structure
 
