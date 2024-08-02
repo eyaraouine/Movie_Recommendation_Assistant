@@ -51,11 +51,17 @@ The Intelligent Movie Recommendation Assistant is a chatbot designed to provide 
 ## Project Structure
 
 **bot.py:** Main entry point for the Streamlit application.
+
 **llm.py:** Initializes the LLM and embeddings.
+
 **graph.py:** Manages the connection to the Neo4j database.
+
 **agent.py:** Contains the logic for the chatbot agent, including tools and handlers.
+
 **tools/vector.py:** Defines the retrieval tools for movie plot search.
+
 **tools/cypher.py:** Contains Cypher queries used for interacting with the Neo4j database, including queries for movie recommendations and plot searches.
+
 **.streamlit/secrets.toml:** Stores sensitive configuration information.
 
 ## Usage
