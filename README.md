@@ -27,39 +27,45 @@ The Intelligent Movie Recommendation Assistant is a chatbot designed to provide 
    cd intelligent-movie-recommendation-assistant
    
 2. **Create a Virtual Environment:**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+  
+ ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate````
 
-3. **Install Dependencies:** 
-  ```bash
+
+3. **Install Dependencies:**
+
+   ```bash
   pip install -r requirements.txt
-
+   
 4. **Setup Secrets:**
-Create a file .streamlit/secrets.toml and add your OpenAI and Neo4j credentials:
+
+ Create a file .streamlit/secrets.toml and add your OpenAI and Neo4j credentials:
   ```bash
   OPENAI_API_KEY = "your-openai-api-key"
   OPENAI_MODEL = "gpt-4"
   NEO4J_URI = "your-neo4j-uri"
   NEO4J_USERNAME = "your-neo4j-username"
   NEO4J_PASSWORD = "your-neo4j-password"
+   
+5. **Run the application:**
 
-5. **Run the Application:**
-  ```bash
-  streamlit run bot.py
+```bash
+streamlit run bot.py
 
-## Project Structure
 
-bot.py: Main entry point for the Streamlit application.
-llm.py: Initializes the LLM and embeddings.
-graph.py: Manages the connection to the Neo4j database.
-agent.py: Contains the logic for the chatbot agent, including tools and handlers.
-tools/vector.py: Defines the retrieval tools for movie plot search.
-tools/cypher.py: Contains Cypher queries used for interacting with the Neo4j database, including queries for movie recommendations and plot searches.
-.streamlit/secrets.toml: Stores sensitive configuration information.
+   
 
-## Usage
 
-General Chat: Ask the chatbot any movie-related question. It will provide information based on its training and the data in the Neo4j database.
-Plot-Based Search: Describe a movie plot to get recommendations of similar movies.
-Conversation History: The chatbot maintains conversation history to provide contextually relevant responses.
+
+
+ 
+
+
+
+
+  
+
+
+
+
